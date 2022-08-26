@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+function loadXMLDoc(dname)
+{
+    if (window.XMLHttpRequest)
+    {
+        xhttp=new XMLHttpRequest();
+    }
+    else
+    {
+        xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.open("GET",dname,true);
+    xhttp.send();
+    return xhttp.responseXML;
+} 
+function searchXML()
+{
+    xmlDoc=loadXMLDoc("ppslack.xml");
+    x=xmlDoc.getElementsByTagName("upc");
+    input = document.getElementById("input").value;
+    size = input.length;
+    if (input == null || input == "")
+    {
+        document.getElementById("results").innerHTML= "Waiting For UPC Scan..";
+        return false;
+    }
+    for (i=0;i<x.length;i++)
+    {
+        upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
+	  startString = upc.substring(0,size);
+        if (startString.toLowerCase() == input.toLowerCase())
+        {
+            upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
+            upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
+            divText = "<h1>Dating Instructions:</h1><br /><table border=1><tr><th>UPC</th><th>Description</th><th>Shelf Life</th><th>Sell By</th></tr>" + "<tr><td>" + upc + "</td><td>" + description + "</td><td>" + shelflife + "</td><td>" + shelflife + "</td></tr>" + "</table>";
+            break;
+        }
+        else
+        {
+            divText = "<h2>The contact does not exist.</h2>";
+        }
+    }
+	
+    document.getElementById('input').focus();
+var a=9;//nr characters
+if(size>=a){
+		document.getElementById('input').setSelectionRange(0, size);
+}
+   
+document.getElementById("results").innerHTML= divText;
+}
+
+
+</script>
+</head>
+<body>
+<form>Scan Product: <input type="text" name="firstname" id="input" onkeyup="searchXML()" autofocus />
+<script>
+  if (!("autofocus" in document.createElement("input"))) {
+    document.getElementById("input").focus();
+  }
+</script></form>
+<br />
+<br />
+<div id="results">
+</div>
+</body>
+
+</html>
