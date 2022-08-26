@@ -19,6 +19,7 @@ function loadXMLDoc(dname)
 function searchXML()
 {
     xmlDoc=loadXMLDoc("https://tkpc17.github.io/slack/ppslack.xml");
+	document.getElementById("results").innerHTML= "Waiting For UPC Scan..";
     x=xmlDoc.getElementsByTagName("upc");
     input = document.getElementById("input").value;
     size = input.length;
