@@ -21,7 +21,7 @@ function searchXML(){
     		document.getElementById("results").innerHTML= "Waiting For a Valid UPC Scan..";
     		return false;
     }
-    xmlDoc=loadXMLDoc("ppslack.xml");
+    xmlDoc=loadXMLDoc("https://tkpc17.github.io/slack/ppslack.xml");
     x=xmlDoc.getElementsByTagName("upc");
 		for (i=0;i<x.length;i++){
       upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
