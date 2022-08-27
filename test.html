@@ -21,7 +21,7 @@ function searchXML(){
     		document.getElementById("results").innerHTML= "Waiting For a Valid UPC Scan..";
     		return false;
     }
-    xmlDoc=loadXMLDoc("https://tkpc17.github.io/slack/ppslack.xml");
+    xmlDoc=loadXMLDoc("ppslack.xml");
     x=xmlDoc.getElementsByTagName("upc");
 		for (i=0;i<x.length;i++){
       upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
@@ -60,4 +60,3 @@ Date.prototype.addDays = function (days) {
 </div>
 </body>
 </html>
-
