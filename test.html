@@ -1,6 +1,15 @@
 <!DOCTYPE html><html>
 <head>
 <script language="JavaScript" type="text/javascript">
+const hideMobileKeyboardOnReturn = (element) => {
+    element.addEventListener('keyup', (keyboardEvent) => {
+        const key = keyboardEvent.code || keyboardEvent.keyCode;
+        if (key === 'Enter' || key === 13) {
+            element.blur();
+        }
+    });
+};
+
 function loadXMLDoc(dname){
     if (window.XMLHttpRequest){
         xhttp=new XMLHttpRequest();
