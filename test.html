@@ -42,7 +42,8 @@ function searchXML(){
          	upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
           proddescription=xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue;
 					shelflife=xmlDoc.getElementsByTagName("shelflife")[i].childNodes[0].nodeValue;
-          document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1><br />UPC: " + upc + "<br />" + proddescription + "<br/>Shelf Life Days:" + shelflife;
+	      				zone=xmlDoc.getElementsByTagName("zone")[i].childNodes[0].nodeValue;
+          document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1><br />UPC: " + upc + "<br />" + proddescription + "<br/>Shelf Life Days:" + shelflife + "<br/>Zone:" + zone;
 					document.getElementById('input').setSelectionRange(0, size);
 					hideMobileKeyboard();
           break;
