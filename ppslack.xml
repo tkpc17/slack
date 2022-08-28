@@ -3,13 +3,13 @@
   <product>
     <upc>41573061159</upc>
     <description>Apple Lattice Pie 10 inch</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
     <upc>41573060008</upc>
     <description>Apple Lattice Pie 8 inch</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -303,7 +303,7 @@
   <product>
     <upc>0</upc>
     <description>Cherry Lattice Pie 8 inch</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -375,7 +375,7 @@
   <product>
     <upc>891071001023</upc>
     <description>Euro Classic Authentic Sweet Belgian Waffle</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -615,19 +615,19 @@
   <product>
     <upc>0</upc>
     <description>La Tortilla Factory Grande Homestyle</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>78858520391</upc>
     <description>La Tortilla Factory Large Low Carb Whole Wheat Tortillas</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>78858520445</upc>
     <description>La Tortilla Factory Light Flour Tortillas</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
@@ -651,7 +651,7 @@
   <product>
     <upc>78858510170</upc>
     <description>La Tortilla Yellow Corn Tortillas 8ct</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
@@ -843,7 +843,7 @@
   <product>
     <upc>35157700039</upc>
     <description>River Bend Bakery&#174; Double Chocolate Cake Roll with Chocolate Buttercream Filling</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -1083,7 +1083,7 @@
   <product>
     <upc>698997810384</upc>
     <description>Udi's Gluten Free Blueberry Muffins</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -1095,13 +1095,13 @@
   <product>
     <upc>698997810391</upc>
     <description>Udi's Gluten Free Double Chocolate Muffins</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
     <upc>698997809579</upc>
     <description>Udi's Gluten Free Soft  AND  Chewy Cinnamon Raisin Bagels 4 Count</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
@@ -1113,7 +1113,7 @@
   <product>
     <upc>698997809647</upc>
     <description>Udi's Gluten Free Whole Grain Bagels 5 Pack</description>
-    <shelflife>-1</shelflife>
+    <shelflife>Not Defined</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
   <product>
