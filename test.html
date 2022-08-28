@@ -1,14 +1,18 @@
 <!DOCTYPE html><html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<title>Mobile Slack Tool (Proof of Concept - FC06)</title>
 <script language="JavaScript" type="text/javascript">
-const hideMobileKeyboardOnReturn = (element) => {
-    element.addEventListener('keyup', (keyboardEvent) => {
-        const key = keyboardEvent.code || keyboardEvent.keyCode;
-        if (key === 'Enter' || key === 13) {
-            element.blur();
-        }
-    });
-};
+function hideMobileKeyboard(element) {
+    document.getElementById('input').setAttribute('readonly', 'readonly'); // Force keyboard to hide on input field.
+    document.getElementById('input').setAttribute('disabled', 'true'); // Force keyboard to hide on textarea field.
+    setTimeout(function() {
+        document.getElementById('input').blur();  //actually close the keyboard
+        // Remove readonly attribute after keyboard is hidden.
+        document.getElementById('input').removeAttribute('readonly');
+        document.getElementById('input').removeAttribute('disabled');
+    }, 100);
+}
 
 function loadXMLDoc(dname){
     if (window.XMLHttpRequest){
@@ -30,7 +34,7 @@ function searchXML(){
     		document.getElementById("results").innerHTML= "Waiting For a Valid UPC Scan..";
     		return false;
     }
-    xmlDoc=loadXMLDoc("https://tkpc17.github.io/slack/ppslack.xml?update="+date.addDays(1));
+    xmlDoc=loadXMLDoc("ppslack.xml");
     x=xmlDoc.getElementsByTagName("upc");
 		for (i=0;i<x.length;i++){
       upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
@@ -38,8 +42,9 @@ function searchXML(){
          	upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
           proddescription=xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue;
 					shelflife=xmlDoc.getElementsByTagName("shelflife")[i].childNodes[0].nodeValue;
-          document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1><br /><table border=1><tr><th>UPC</th><th>Description</th><th>Days of Life</th></tr>" + "<tr><td>" + upc + "</td><td>" + proddescription + "</td><td>" + shelflife + "</td></tr>" + "</table>";
+          document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1><br />UPC: " + upc + "<br />" + proddescription + "<br/>Shelf Life Days:" + shelflife;
 					document.getElementById('input').setSelectionRange(0, size);
+					hideMobileKeyboard();
           break;
       }
       else {
@@ -58,8 +63,8 @@ Date.prototype.addDays = function (days) {
 }
 </script>
 </head>
-<body>
-<form>Scan Product: <input type="text" name="input" id="input" onkeyup="searchXML()" autofocus />
+<body style="background-image: url(bg.jpg); background-repeat:no-repeat; background-position: 50% 12%;">
+<form>Scan Product: <input type="text" pattern="\d*" inputmode="numeric" name="input" id="input" onkeyup="searchXML()" autofocus />
 <script>
   if (!("autofocus" in document.createElement("input"))) {
     document.getElementById("input").focus();
