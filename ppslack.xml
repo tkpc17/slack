@@ -236,7 +236,7 @@
   </product>
   <product>
     <upc>041573002565</upc>
-    <description>Bakery Fresh M&M Cookies</description>
+    <description>Bakery Fresh M AND M Cookies</description>
     <shelflife>6</shelflife>
     <zone>Ambient</zone>
   </product>
@@ -572,25 +572,25 @@
   </product>
   <product>
     <upc>013087256307</upc>
-    <description>La Brea Bakery Take & Bake Ancient Grain Baguette Twin Pack</description>
+    <description>La Brea Bakery Take  AND  Bake Ancient Grain Baguette Twin Pack</description>
     <shelflife>6</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>013087256376</upc>
-    <description>La Brea Bakery Take & Bake Everything Rolls</description>
+    <description>La Brea Bakery Take  AND  Bake Everything Rolls</description>
     <shelflife>6</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>781421170106</upc>
-    <description>La Brea Take & Bake French Baguette Twin Pack</description>
+    <description>La Brea Take  AND  Bake French Baguette Twin Pack</description>
     <shelflife>6</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>781421170113</upc>
-    <description>La Brea Take & Bake French Dinner Rolls</description>
+    <description>La Brea Take  AND  Bake French Dinner Rolls</description>
     <shelflife>6</shelflife>
     <zone>Ambient</zone>
   </product>
@@ -746,43 +746,43 @@
   </product>
   <product>
     <upc>011110996145</upc>
-    <description>Private Selection® Assorted New York Style Cheesecake</description>
+    <description>Private Selection&#174; Assorted New York Style Cheesecake</description>
     <shelflife>120</shelflife>
     <zone>Frozen</zone>
   </product>
   <product>
     <upc>011110995421</upc>
-    <description>Private Selection® Classic New York Style Cheesecake</description>
+    <description>Private Selection&#174; Classic New York Style Cheesecake</description>
     <shelflife>120</shelflife>
     <zone>Frozen </zone>
   </product>
   <product>
     <upc>011110057730</upc>
-    <description>Private Selection® Coconut Cream Pie</description>
+    <description>Private Selection&#174; Coconut Cream Pie</description>
     <shelflife>5</shelflife>
     <zone>Refrigerated</zone>
   </product>
   <product>
     <upc>011110057778</upc>
-    <description>Private Selection® Dark French Silk Cream Pie</description>
+    <description>Private Selection&#174; Dark French Silk Cream Pie</description>
     <shelflife>5</shelflife>
     <zone>Refrigerated</zone>
   </product>
   <product>
     <upc>011110000460</upc>
-    <description>Private Selection® Lemon Dessert Bars</description>
+    <description>Private Selection&#174; Lemon Dessert Bars</description>
     <shelflife>5</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>011110135094</upc>
-    <description>Private Selection® New York Style Cheesecake</description>
+    <description>Private Selection&#174; New York Style Cheesecake</description>
     <shelflife>120</shelflife>
     <zone>Frozen</zone>
   </product>
   <product>
     <upc>011110603166</upc>
-    <description>Private Selection® Strawberry Swirl Cheesecake</description>
+    <description>Private Selection&#174; Strawberry Swirl Cheesecake</description>
     <shelflife>120</shelflife>
     <zone>Frozen</zone>
   </product>
@@ -842,7 +842,7 @@
   </product>
   <product>
     <upc>35157700039</upc>
-    <description>River Bend Bakery® Double Chocolate Cake Roll with Chocolate Buttercream Filling</description>
+    <description>River Bend Bakery&#174; Double Chocolate Cake Roll with Chocolate Buttercream Filling</description>
     <shelflife>-1</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
@@ -854,19 +854,19 @@
   </product>
   <product>
     <upc>011110190826</upc>
-    <description>Simple Truth Organic® 100% Whole Grain Sliced Multigrain Bread</description>
+    <description>Simple Truth Organic&#174; 100% Whole Grain Sliced Multigrain Bread</description>
     <shelflife>5</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>011110058584</upc>
-    <description>Simple Truth Organic® Rustic Sliced Country White Bread</description>
+    <description>Simple Truth Organic&#174; Rustic Sliced Country White Bread</description>
     <shelflife>5</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>011110305060</upc>
-    <description>Simple Truth Organic™ Sliced Quinoa Multigrain Bread</description>
+    <description>Simple Truth Organic&#153; Sliced Quinoa Multigrain Bread</description>
     <shelflife>5</shelflife>
     <zone>Ambient</zone>
   </product>
@@ -1016,13 +1016,13 @@
   </product>
   <product>
     <upc>770981041070</upc>
-    <description>Two Bite® Chocolate Cupcakes</description>
+    <description>Two Bite&#174; Chocolate Cupcakes</description>
     <shelflife>14</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>770981031095</upc>
-    <description>Two Bite® Vanilla Cupcakes</description>
+    <description>Two Bite&#174; Vanilla Cupcakes</description>
     <shelflife>14</shelflife>
     <zone>Ambient</zone>
   </product>
@@ -1070,13 +1070,13 @@
   </product>
   <product>
     <upc>770981063447</upc>
-    <description>Two-Bite® Cherry Honey Scones</description>
+    <description>Two-Bite&#174; Cherry Honey Scones</description>
     <shelflife>10</shelflife>
     <zone>Ambient</zone>
   </product>
   <product>
     <upc>770981063492</upc>
-    <description>Two-Bite® Vanilla Bean Scones</description>
+    <description>Two-Bite&#174; Vanilla Bean Scones</description>
     <shelflife>10</shelflife>
     <zone>Ambient</zone>
   </product>
@@ -1100,7 +1100,7 @@
   </product>
   <product>
     <upc>698997809579</upc>
-    <description>Udi's Gluten Free Soft & Chewy Cinnamon Raisin Bagels 4 Count</description>
+    <description>Udi's Gluten Free Soft  AND  Chewy Cinnamon Raisin Bagels 4 Count</description>
     <shelflife>-1</shelflife>
     <zone>Lookup in OSP</zone>
   </product>
@@ -1118,7 +1118,7 @@
   </product>
   <product>
     <upc>039677873150</upc>
-    <description>Wholesome Harvest 9-Grain & Seed Loaf</description>
+    <description>Wholesome Harvest 9-Grain  AND  Seed Loaf</description>
     <shelflife>7</shelflife>
     <zone>Ambient</zone>
   </product>
