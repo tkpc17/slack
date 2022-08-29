@@ -59,7 +59,8 @@ function searchXML(){
 	      document.getElementById('input').focus();
       }
 		}
-    document.getElementById('input').focus();
+    document.getElementById('input').focus({focusVisible: true});
+	document.getElementById('input').contentEditable = true;
 }
 Date.prototype.addDays = function (days) {
   let date = new Date(this.valueOf());
