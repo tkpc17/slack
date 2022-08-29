@@ -12,6 +12,7 @@ function hideMobileKeyboard(element) {
         document.getElementById('input').removeAttribute('readonly');
         document.getElementById('input').removeAttribute('disabled');
     }, 100);
+	document.getElementById('input').focus();
 }
 
 function loadXMLDoc(dname){
@@ -46,7 +47,7 @@ function searchXML(){
           document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1>UPC: " + upc + "<br />" + proddescription + "<br/>Shelf Life Days:" + shelflife + "<br/>Zone:" + zone;
 					document.getElementById('input').setSelectionRange(0, size);
 					hideMobileKeyboard();
-	      				document.getElementById('input').focus();
+	      				
           break;
       }
       else {
