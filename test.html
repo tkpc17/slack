@@ -12,9 +12,11 @@ function hideMobileKeyboard(element) {
         document.getElementById('input').removeAttribute('readonly');
         document.getElementById('input').removeAttribute('disabled');
     }, 100);
+    setTimeout(function() {
 	document.getElementById('input').readOnly = true;
 	document.getElementById('input').focus();
 	setTimeout(function(){document.getElementByID('input').readOnly - false;}, 50);
+    }, 100);
 }
 
 function loadXMLDoc(dname){
