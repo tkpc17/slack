@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slack>
   <product>
-    <upc>12345678912</upc>
+    <upc>98765432198</upc>
     <description>11 digit Cookie</description>
     <shelflife>10</shelflife>
     <zone>Ambient</zone>
@@ -13,7 +13,7 @@
     <zone>Ambient</zone>
   </product>
   <product>
-    <upc>00000000000</upc>
+    <upc>11111111111</upc>
     <description>11 digit Cake</description>
     <shelflife>8</shelflife>
     <zone>Chill</zone>
@@ -31,7 +31,7 @@
     <zone>Ambient</zone>
   </product>
   <product>
-    <upc>01010101010</upc>
+    <upc>10101010101</upc>
     <description>11 digit Bun</description>
     <shelflife>4</shelflife>
     <zone>Ambient</zone>
