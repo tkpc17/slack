@@ -3,18 +3,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <title>Mobile Slack Tool (Proof of Concept - FC06)</title>
 <script language="JavaScript" type="text/javascript">
-function hideMobileKeyboard(element) {
-    document.getElementById('input').setAttribute('readonly', 'readonly'); // Force keyboard to hide on input field.
-    document.getElementById('input').setAttribute('disabled', 'true'); // Force keyboard to hide on textarea field.
-    setTimeout(function() {
-        document.getElementById('input').blur();  //actually close the keyboard
-        // Remove readonly attribute after keyboard is hidden.
-        document.getElementById('input').removeAttribute('readonly');
-        document.getElementById('input').removeAttribute('disabled');
-    }, 100);
-    setTimeout(function() {
+function hideMobileKeyboard(element) { //need to review so the keyboard on mobile rf device does not automatically show.
+    //document.getElementById('input').setAttribute('readonly', 'readonly');
+    //document.getElementById('input').setAttribute('disabled', 'true');
+    //setTimeout(function() {
+    //    document.getElementById('input').blur();  //actually close the keyboard
+    //    document.getElementById('input').removeAttribute('readonly');
+    //    document.getElementById('input').removeAttribute('disabled');
+    //}, 100);
+    //setTimeout(function() {
 	document.getElementById('input').focus();
-    }, 100);
+    //}, 100);
 }
 
 function loadXMLDoc(dname){
