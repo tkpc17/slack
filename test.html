@@ -12,7 +12,9 @@ function hideMobileKeyboard(element) {
         document.getElementById('input').removeAttribute('readonly');
         document.getElementById('input').removeAttribute('disabled');
     }, 100);
+	document.getElementById('input').readOnly = true;
 	document.getElementById('input').focus();
+	setTimeout(function(){document.getElementByID('input').readOnly - false;}, 50);
 }
 
 function loadXMLDoc(dname){
@@ -37,30 +39,26 @@ function searchXML(){
     }
     xmlDoc=loadXMLDoc("ppslack.xml");
     x=xmlDoc.getElementsByTagName("upc");
-		for (i=0;i<x.length;i++){
+    for (i=0;i<x.length;i++){
       upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
       if (upc.toLowerCase() == input.toLowerCase()){
-         	upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
+          upc=xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
           proddescription=xmlDoc.getElementsByTagName("description")[i].childNodes[0].nodeValue;
-					shelflife=xmlDoc.getElementsByTagName("shelflife")[i].childNodes[0].nodeValue;
-	      				zone=xmlDoc.getElementsByTagName("zone")[i].childNodes[0].nodeValue;
+	  shelflife=xmlDoc.getElementsByTagName("shelflife")[i].childNodes[0].nodeValue;
+	  zone=xmlDoc.getElementsByTagName("zone")[i].childNodes[0].nodeValue;
           document.getElementById("results").innerHTML= "<h1>Sell By: "+date.addDays(parseInt(shelflife))+"</h1>UPC: " + upc + "<br />" + proddescription + "<br/>Shelf Life Days:" + shelflife + "<br/>Zone:" + zone;
-					document.getElementById('input').setSelectionRange(0, size);
-					hideMobileKeyboard();
-	      				
+	  document.getElementById('input').setSelectionRange(0, size);
+	  hideMobileKeyboard();    				
           break;
       }
       else {
       	document.getElementById("results").innerHTML= "<h2>Barcode not in Slack Tool</h2>";
       	if(size>=11){
-					setTimeout(() => {  document.getElementById('input').setSelectionRange(0, size); }, 3000);
-		document.getElementById('input').focus();
-				}	
-	      document.getElementById('input').focus();
+	     setTimeout(() => {  document.getElementById('input').setSelectionRange(0, size); }, 3000);
+	     hideMobileKeyboard();
+	}
       }
-		}
-    document.getElementById('input').focus({focusVisible: true});
-	document.getElementById('input').contentEditable = true;
+   }
 }
 Date.prototype.addDays = function (days) {
   let date = new Date(this.valueOf());
