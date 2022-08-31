@@ -13,9 +13,7 @@ function hideMobileKeyboard(element) {
         document.getElementById('input').removeAttribute('disabled');
     }, 100);
     setTimeout(function() {
-	document.getElementById('input').readOnly = true;
 	document.getElementById('input').focus();
-	setTimeout(function(){document.getElementByID('input').readOnly - false;}, 50);
     }, 100);
 }
 
@@ -39,7 +37,7 @@ function searchXML(){
     		document.getElementById("results").innerHTML= "Waiting For a Valid UPC Scan..";
     		return false;
     }
-    xmlDoc=loadXMLDoc("ppslack.xml");
+    xmlDoc=loadXMLDoc("PoC-slack-RFdevice-data.xml");
     x=xmlDoc.getElementsByTagName("upc");
     for (i=0;i<x.length;i++){
       upc = xmlDoc.getElementsByTagName("upc")[i].childNodes[0].nodeValue;
