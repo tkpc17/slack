@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slack>
+  <product>
+    <upc>12345678912</upc>
+    <description>11 digit Cookie</description>
+    <shelflife>10</shelflife>
+    <zone>Ambient</zone>
+  </product>
+  <product>
+    <upc>123456789123</upc>
+    <description>12 digit Cookie</description>
+    <shelflife>9</shelflife>
+    <zone>Ambient</zone>
+  </product>
+  <product>
+    <upc>00000000000</upc>
+    <description>11 digit Cake</description>
+    <shelflife>8</shelflife>
+    <zone>Chill</zone>
+  </product>
+  <product>
+    <upc>000000000000</upc>
+    <description>12 digit Cake</description>
+    <shelflife>6</shelflife>
+    <zone>Chill</zone>
+  </product>
+  <product>
+    <upc>010101010101</upc>
+    <description>12 digit Bun</description>
+    <shelflife>3</shelflife>
+    <zone>Ambient</zone>
+  </product>
+  <product>
+    <upc>01010101010</upc>
+    <description>11 digit Bun</description>
+    <shelflife>4</shelflife>
+    <zone>Ambient</zone>
+  </product>
+</slack>
